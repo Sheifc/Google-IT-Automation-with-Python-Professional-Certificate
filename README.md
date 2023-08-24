@@ -8,3 +8,5 @@ This is a six-course certificate, developed by Google and design to teach how to
 4. Troubleshooting and Debugging Techniques
 5. Configuration Management and the Cloud
 6. Automating Real-World tasks with Python 
+
+My solutions to the proposed exercises will be added soon.

@@ -2,6 +2,24 @@
 
 # Modifying the content of a List:
 
+# Methods: 
+
+"""
+append() add a new element at the end of the list.
+list.append(“Hello”)
+
+insert() to add an element in any position of the list.
+list.insert(0, “hello”) # index 0
+
+remove()
+List.remove(“Hola”) # remove the first match found
+
+pop()
+List.pop(3) # the output is the emlement of the list which holds index 3 
+
+list[2] = “Hello” # introduce the element "Hello" in the index 2 by replacing the element of the list at this position
+"""
+
 """
 The append method adds a new element at the end of the list.
 """

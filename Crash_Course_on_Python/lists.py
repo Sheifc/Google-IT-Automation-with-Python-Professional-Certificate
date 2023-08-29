@@ -205,7 +205,7 @@ print("Total characters: {}, Average lenght: {}".format(chars, chars/len(animals
 
 """
 Enumerate function:
-
+-------------------
 What if you wanted to know the index of an element while going through the list?
 """
 

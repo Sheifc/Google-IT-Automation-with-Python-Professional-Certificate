@@ -1,6 +1,6 @@
 # Lists
 
-# Modifying the Contents of a List:
+# Modifying the content of a List:
 
 """
 The append method adds a new element at the end of the list.

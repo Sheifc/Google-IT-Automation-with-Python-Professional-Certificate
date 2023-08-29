@@ -1,5 +1,78 @@
 # Lists
 
+# Modifying the Contents of a List:
+
+"""
+The append method adds a new element at the end of the list.
+"""
+
+fruits = ["Pineapple", "Banana", "Apple", "Melon"]
+fruits.append("Kiwi")
+
+# Output: ['Pineaple', 'Banana', 'Apple', 'Melon', 'Kiwi']
+
+"""
+The insert method takes an index as the first parameter and an element as the second parameter. 
+It adds the element at that index in the list. 
+To add it as the first element, we use index zero and we can use any other number.
+"""
+
+fruits.insert(0, "Orange")
+print(fruits)
+
+# Output: ['Orange', 'Pineaple', 'Banana', 'Apple', 'Melon', 'Kiwi']
+
+"""
+What happens if we use a number larger than the length of the list?
+"""
+
+fruits.insert(25, "Peach")
+print(fruits)
+
+#Output: [''Orange', 'Pineapple', 'Banana', 'Apple', 'Melon', 'Kiwi', 'Peach']
+
+"""
+No errors. If we use an index higher than the current length, the element just gets added to the end. 
+You can pass any number to insert but usually, you either add at the beginning using insert at the zero index or at the end using append.
+"""
+
+"""
+We can also remove elements from the list. 
+We can do it using the value of the element we want to remove. 
+The remove method removes from the list the first occurrence of the element we pass to it.
+"""
+
+fruits.remove("Melon")
+print(fruits)
+
+# Output: ['Orange', 'Pineapple', 'Banana', 'Apple', 'Kiwi, 'Peach']
+
+"""
+What happens if the element is not in the list?
+We got a value error, telling us the element isn't in the list.
+"""
+"""
+Another way we can remove elements is by using the pop method, which receives an index.
+
+The pop method returns the element that was removed at the index that was passed.
+"""
+
+fruits.pop(3)
+# Output: 'Apple'
+
+print(fruits)
+# Output: ['Orange', 'Pineapple', 'Banana', 'Kiwi', 'Peach']
+
+"""
+In the last way to modify the contents of a list is to change an item by assigning something else to that position, like this.
+"""
+
+fruits[2] = "Strawberry"
+print(fruits)
+# Output: ['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']
+
+# Tuples
+
 """
 The position in a tuple has meaning.
 """
@@ -92,6 +165,8 @@ Output:
 ['Alex Diego <alex@example.com>', 'Shay Brandt <shay@example.com>']
 """
 
+# Enumerate function
+
 """
 Complete the skip_elements function to return every other element from the list,
 this time using the enumerate function to check if an element is in an even position or an odd position.
@@ -120,6 +195,8 @@ for x in range(1, 11):
 print(multiples)
 
 # Output: [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
+
+# List comprehension
 
 """
 Another way: using list comprehensions:

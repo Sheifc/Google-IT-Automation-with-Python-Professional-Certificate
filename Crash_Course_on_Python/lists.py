@@ -1,10 +1,56 @@
-# Lists
+### Lists ###
 
-# Modifying the content of a List:
-
-# Methods: 
 
 """
+Common sequence operations:
+---------------------------
+Lists and tuples are both sequences and they share a number of sequence operations. The following common sequence operations are used by both lists and tuples:
+
+len(sequence) - Returns the length of the sequence.
+
+for element in sequence - Iterates over each element in the sequence.
+
+if element in sequence - Checks whether the element is part of the sequence.
+
+sequence[x] - Accesses the element at index [x] of the sequence, starting at zero
+
+sequence[x:y] - Accesses a slice starting at index [x], ending at index [y-1]. If [x] is omitted, the index will start at 0 by default. If [y] is omitted, the len(sequence) will set the ending index position by default.
+
+for index, element in enumerate(sequence) - Iterates over both the indices and the elements in the sequence at the same time.
+"""
+
+"""
+List-specific operations and methods:
+------------------------------------
+One major difference between lists and tuples is that lists are mutable (changeable) and tuples are immutable (not changeable). There are a few operations and methods that are specific to changing data within lists:
+
+list[index] = x - Replaces the element at index [n] with x.
+
+list.append(x) - Appends x to the end of the list.
+
+list.insert(index, x) - Inserts x at index position [index].
+
+list.pop(index) - Returns the element at [index] and removes it from the list. If [index] position is not in the list, the last element in the list is returned and removed.
+
+list.remove(x) - Removes the first occurrence of x in the list.
+
+list.sort() - Sorts the items in the list.
+
+list.reverse() - Reverses the order of items of the list.
+
+list.clear() - Deletes all items in the list.
+
+list.copy() - Creates a copy of the list.
+
+list.extend(other_list) - Appends all the elements of other_list at the end of list
+"""
+
+"""
+Modifying the content of a List:
+--------------------------------
+
+Methods' examples:
+------------------
 append() add a new element at the end of the list.
 list.append(“Hello”)
 
@@ -21,6 +67,8 @@ list[2] = “Hello” # introduce the element "Hello" in the index 2 by replacin
 """
 
 """
+Append Method:
+--------------
 The append method adds a new element at the end of the list.
 """
 
@@ -30,6 +78,8 @@ fruits.append("Kiwi")
 # Output: ['Pineaple', 'Banana', 'Apple', 'Melon', 'Kiwi']
 
 """
+Insert Method:
+--------------
 The insert method takes an index as the first parameter and an element as the second parameter. 
 It adds the element at that index in the list. 
 To add it as the first element, we use index zero and we can use any other number.
@@ -55,6 +105,8 @@ You can pass any number to insert but usually, you either add at the beginning u
 """
 
 """
+Remove Method:
+--------------
 We can also remove elements from the list. 
 We can do it using the value of the element we want to remove. 
 The remove method removes from the list the first occurrence of the element we pass to it.
@@ -69,7 +121,10 @@ print(fruits)
 What happens if the element is not in the list?
 We got a value error, telling us the element isn't in the list.
 """
+
 """
+Pop Method:
+-----------
 Another way we can remove elements is by using the pop method, which receives an index.
 
 The pop method returns the element that was removed at the index that was passed.
@@ -89,7 +144,7 @@ fruits[2] = "Strawberry"
 print(fruits)
 # Output: ['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']
 
-# Tuples
+### Tuples ###
 
 """
 The position in a tuple has meaning.
@@ -109,8 +164,8 @@ print(result)
 # Output: (81, 23, 20)
 
 """
-Unpack tuples: split tuples
-
+Unpack tuples: split tuples:
+----------------------------
 This allows you to take multiple returned values from a function and store each value in its own variable.
 """
 
@@ -137,6 +192,7 @@ print(file_size(('Program', 'py', 1239))) # Should print 1.21
 
 """
 Iterating over lists and tuples:
+-------------------------------
 """
 
 animals = ["lion", "zebra", "dolphin", "monkey"]
@@ -183,8 +239,6 @@ Output:
 ['Alex Diego <alex@example.com>', 'Shay Brandt <shay@example.com>']
 """
 
-# Enumerate function
-
 """
 Complete the skip_elements function to return every other element from the list,
 this time using the enumerate function to check if an element is in an even position or an odd position.
@@ -214,9 +268,9 @@ print(multiples)
 
 # Output: [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
 
-# List comprehension
-
 """
+List comprehensions:
+--------------------
 Another way: using list comprehensions:
 """
 
@@ -260,11 +314,11 @@ print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
 print(odd_numbers(1))  # Should print [1]
 print(odd_numbers(-1)) # Should print []
 
-# List comprehension examples
-
-# Simple List Comprehension
-
 """
+List comprehension examples:
+---------------------------
+Simple List Comprehension:
+
 For example, [ x*2 for x in range(1,11) ] is a simple list comprehension.
 This single line of code iterates over a range from 1 to 10, multiplies each element in the range by 2,
 and creates a new list from all multiples of 2 from 2 to 20.
@@ -277,8 +331,6 @@ print("List comprehension result:")
 # of code into one line:
 print([x*2 for x in range(1,11)])
 
-
-
 ### Long form for loop
 print("Long form code result:")
 
@@ -289,9 +341,9 @@ for x in range(1,11):
    my_list.append(x*2)
 print(my_list)
 
-# List Comprehension with Conditional Statement
-
 """
+List Comprehension with Conditional Statement:
+----------------------------------------------
 You can also use conditionals with list comprehensions to build even more complex and powerful statements.
 You can do this by appending an if statement to the end of the list comprehension.
 For example, [ x for x in range(1,101) if x % 10 == 0 ] generates

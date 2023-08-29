@@ -11,37 +11,37 @@ This is a six-course certificate, developed by Google and designed to teach how 
 
 My solutions to the proposed exercises will be added soon.
 
-# Operations, Methods, and Functions
-## String Methods, Operations, and Functions
-.upper()
-.lower()
-.split()
-.format()
-.isnumeric()
-.isalpha()
-.replace()
-string index [ ]
-len()
+### Operations, Methods, and Functions
+#### String Methods, Operations, and Functions
+.upper()  
+.lower()  
+.split()  
+.format()  
+.isnumeric()  
+.isalpha()  
+.replace()  
+string index [ ]  
+len()  
 
-## List Operations and Methods
-.reverse()
-.extend()
-.insert()
-.append()
-.remove()
-.sort()
+#### List Operations and Methods
+.reverse()  
+.extend()  
+.insert()  
+.append()  
+.remove()  
+.sort()  
 
-## list comprehensions [ ]
+#### list comprehensions [ ]
 
 list comprehensions [ ] with if condition
 
 ## Dictionary Operations and Methods
-.items(
-.update()
-.keys()
-.values()
-.copy()
-dictionary[key]
-dictionary[key] = value 
+.items()  
+.update()  
+.keys()  
+.values()  
+.copy()  
+dictionary[key]  
+dictionary[key] = value    
 
 

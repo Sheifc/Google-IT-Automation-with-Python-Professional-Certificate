@@ -30,8 +30,9 @@ Output:
 """
 
 """
-Complete the for loop and string method needed in this function so that a function call like
-"alpha_length("This has 1 number in it")" will return the output "17". This function should:
+Complete the for loop and string method needed in this function so that a function call 
+like "alpha_length("This has 1 number in it")" will return the output "17". 
+This function should:
 
 1. accept a string through the parameters of the function;
 2. iterate over the characters in the string;
@@ -64,10 +65,12 @@ Output:
 
 """
 Consider the following scenario about using Python lists:
-Employees at a company shared the distance they drive to work (in miles) through an online survey.
+Employees at a company shared the distance they drive to work (in miles) 
+through an online survey.
 These distances were automatically added by Python to a list called "distances"
 in the order that each employee submitted their distance.
-Management wants the list to be sorted in the order of the longest distance to the shortest distance.
+Management wants the list to be sorted in the order of the longest distance 
+to the shortest distance.
 
 Complete the function to sort the "distances" list. This function should:
 1. sort the given "distances" list, passed through the function's parameters;;
@@ -125,7 +128,8 @@ def car_listing(car_prices):
     # Complete the for loop to iterate through the key and value items
     # in the dictionary.
     for key, value in car_prices.items():
-        result += "A {} costs {} dollars\n".format(key, value) # Use a string method to format the required string
+        # Use a string method to format the required string
+        result += "A {} costs {} dollars\n".format(key, value) 
     return result
 print(car_listing({"Kia Soul": 19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000,
                    "Toyota Prius" :24000}))
@@ -150,8 +154,8 @@ Tessa and Rick are hosting a party. Together, they sent out invitations,
 and collected the responses in a dictionary, with names of their friends
 and the number of guests each friend will be bringing.
 
-Complete the function so that the "check_guests" function retrieves the number of guests
-(value) the specified friend "guest" (key) is bringing.
+Complete the function so that the "check_guests" function retrieves the number of 
+guests (value) the specified friend "guest" (key) is bringing.
 This function should:
 1. accept a dictionary "guest_list" and a key "guest" variable passed through
 the function parameters;
@@ -255,7 +259,8 @@ Output: ['rock', 'pop', 'country', 'blues"]
 What do the following commands return?
 """
                       
-teacher_names = {"Math": "Aniyah Cook", "Science": "Ines Bisset", "Engineering": "Wayne Branon"}
+teacher_names = {"Math": "Aniyah Cook", "Science": "Ines Bisset", 
+                 "Engineering": "Wayne Branon"}
 teacher_names.values ()
 
 """
@@ -289,9 +294,10 @@ K
 
 """
 Fill in the blank to complete the "string_words" function.
-This function should split up the words in the given "string" and return the number of wordsin the "string".
-Complete the string operation and method needed in this function so that a function call like
-"string_ words("Hello, World"" will return the output "2".
+This function should split up the words in the given "string" and return the number 
+of wordsin the "string".
+Complete the string operation and method needed in this function so that 
+a function call like "string_ words("Hello, World"" will return the output "2".
 """
 
 def string_words(string):
@@ -315,10 +321,12 @@ Output:
 
 """
 Consider the following scenario about using Python lists:
-A professor gave his two assistants, Aniyah and Imani, the task of keeping an attendance list of students
-in the order they arrived in the classroom. Aniyah was the first one to note which students arrived,
-and then Imani took over. After class, they each entered their lists into the computer and emailed them
-to the professor. The professor wants to combine the two lists into one and sort it in alphabetical order.
+A professor gave his two assistants, Aniyah and Imani, the task of keeping 
+an attendance list of students in the order they arrived in the classroom. 
+Aniyah was the first one to note which students arrived, and then Imani took over. 
+After class, they each entered their lists into the computer and emailed them 
+to the professor. The professor wants to combine the two lists into one and sort it 
+in alphabetical order.
 
 Complete the code by combining the two lists into one and then sorting the new list.
 This function should:
@@ -342,7 +350,8 @@ Imanis_list = ["Loik", "Gabriel", "Ahmed", "Soraya"]
 
 
 print(alphabetize_lists(Aniyahs_list, Imanis_list))
-# Should print: ['Ahmed', 'Emma', 'Gabriel', 'Imani', 'Jacomo', 'Loik', 'Nia', 'Soraya', 'Uli']
+# Should print: 
+# ['Ahmed', 'Emma', 'Gabriel', 'Imani', 'Jacomo', 'Loik', 'Nia', 'Soraya', 'Uli']
 
 """
 Output:
@@ -351,9 +360,11 @@ Output:
 
 """
 Fill in the blank to complete the "increments" function.
-This function should use a list comprehension to create a list of numbers incremented by 2 (n+2).
-The function receives two variables and should return a list of incremented consecutive numbers
-between "start" and "end" inclusively (meaning the range should include both the "start" and "end" values).
+This function should use a list comprehension to create a list of numbers incremented 
+by 2 (n+2).
+The function receives two variables and should return a list of incremented consecutive 
+numbers between "start" and "end" inclusively (meaning the range should include both 
+the "start" and "end" values).
 Complete the list comprehension in this function so that input like "squares(2, 3)"
 will produce the output "[4, 5]".
 """
@@ -376,8 +387,8 @@ Output:
 """
 Fill in the blanks to complete the "endangered _animals" function.
 This function accepts a dictionary containing a list of endangered animals (keys)
-and their remaining population (values). For each key in the given "animal_ dict" dictionary,
-format a string to print the name of the animal, with one animal name per line.
+and their remaining population (values). For each key in the given "animal_ dict" 
+dictionary, format a string to print the name of the animal, with one animal name per line.
 """
 
 def endangered_animals(animal_dict):
@@ -390,7 +401,8 @@ def endangered_animals(animal_dict):
     return result
 
 
-print(endangered_animals({"Javan Rhinoceros":60, "Vaquita":10, "Mountain Gorilla":200, "Tiger":500}))
+print(endangered_animals({"Javan Rhinoceros":60, "Vaquita":10, 
+                          "Mountain Gorilla":200, "Tiger":500}))
 
 # Should print:
 # Javan Rhinoceros
@@ -408,16 +420,20 @@ Tiger
 
 """
 Consider the following scenario about using Python dictionaries:
-Tessa and Rick are hosting a party. Both sent out invitations to their friends, and each one collected
-responses into dictionaries, with names of their friends and how many guests each friend was bringing.
-Each dictionary is a partial guest list, but Rick's guest list has more current intormation
-about the number of guests.
-Complete the function to combine both dictionaries into one, with each friend listed only once,
-and the number of guests from Rick's dictionary taking precedence, if a name is included in both dictionaries.
+Tessa and Rick are hosting a party. Both sent out invitations to their friends, 
+and each one collected responses into dictionaries, with names of their friends 
+and how many guests each friend was bringing.
+Each dictionary is a partial guest list, but Rick's guest list has more current 
+intormation about the number of guests.
+Complete the function to combine both dictionaries into one, with each friend listed 
+only once, and the number of guests from Rick's dictionary taking precedence, 
+if a name is included in both dictionaries.
+
 Then print the resulting dictionary. This function should:
 1. accept two dictionaries through the function's parameters;
 2. combine both dictionaries into one, with each key listed only once;
-3. the values from the "guests1" dictionary taking precedence, if a key is included in both dictionaries;
+3. the values from the "guests1" dictionary taking precedence, if a key is included 
+in both dictionaries;
 4. then print the new dictionary of combined items.
 """
 
@@ -427,21 +443,25 @@ def combine_guests(guests1, guests2):
 
     return guests2
 
-Ricks_guests = { "Adam":2, "Camila":3, "David":1, "Jamal":3, "Charley":2, "Titus":1, "Raj":4}
-Tessas_guests = { "David":4, "Noemi":1, "Raj":2, "Adam":1, "Sakira":3, "Chidi":5}
+Ricks_guests = { "Adam":2, "Camila":3, "David":1, "Jamal":3, 
+                "Charley":2, "Titus":1, "Raj":4}
+Tessas_guests = { "David":4, "Noemi":1, "Raj":2, "Adam":1, 
+                 "Sakira":3, "Chidi":5}
 
 print(combine_guests(Ricks_guests, Tessas_guests))
 # Should print:
-# {'David': 1, 'Noemi': 1, 'Raj': 4, 'Adam': 2, 'Sakira': 3, 'Chidi': 5, 'Camila': 3, 'Jamal': 3, 'Charley': 2, 'Titus': 1}
+# {'David': 1, 'Noemi': 1, 'Raj': 4, 'Adam': 2, 'Sakira': 3, 'Chidi': 5, 
+# 'Camila': 3, 'Jamal': 3, 'Charley': 2, 'Titus': 1}
 
 """
 Output:
-{'David': 1, 'Noemi': 1, 'Raj': 4, 'Adam': 2, 'Sakira': 3, 'Chidi': 5, 'Camila': 3, 'Jamal': 3, 'Charley': 2, 'Titus': 1}
+{'David': 1, 'Noemi': 1, 'Raj': 4, 'Adam': 2, 'Sakira': 3, 'Chidi': 5, 
+'Camila': 3, 'Jamal': 3, 'Charley': 2, 'Titus': 1}
 """
 
 """
-Complete the function so that input like "This is a sentence." will return a dictionary that holds
-the count of each letter that occurs in the string: ['t': 2, 'h': 1, 'j': 2,
+Complete the function so that input like "This is a sentence." will return a dictionary 
+that holds the count of each letter that occurs in the string: ['t': 2, 'h': 1, 'j': 2,
 's': 3, 'a': 1, 'e': 3, 'n': 2, 'c': 1}. This function should:
 1. accept a string "text" variable through the function's parameters;
 2. iterate over each character the input string to count the frequency of each letter found,
@@ -520,11 +540,13 @@ speed_limits["highway"]
 
 """
 Fill in the blank to complete the "even _numbers" function.
-This function should use a list comprehension to create a list of even numbers using a conditional
-if statement with the modulo operator to test for numbers evenly divisible by 2.
-The function receives two variables and should return the list of even numbers that occur
-between the "first" and "last" variables exclusively (meaning don't modify the default behavior
-of the range to exclude the "end" value in the range). For example, even_numbers(2, 7) should return [2, 4, 6].
+This function should use a list comprehension to create a list of even numbers 
+using a conditional if statement with the modulo operator to test for numbers 
+evenly divisible by 2.
+The function receives two variables and should return the list of even numbers 
+that occur between the "first" and "last" variables exclusively (meaning don't 
+modify the default behavior of the range to exclude the "end" value in the range). 
+For example, even_numbers(2, 7) should return [2, 4, 6].
 """
 
 def even_numbers(first, last):

@@ -130,13 +130,17 @@ print(car_listing({"Kia Soul": 19000, "Lamborghini Diablo":55000, "Ford Fiesta":
                    "Toyota Prius' :24000}))
 
 # Should print:
-# a Kia Soul costs 10000 dollars
+# A Kia Soul costs 10000 dollars
 # A Lamborghini Diablo costs 55000 dollars
 # A Ford Fiesta costs 13000 dollars
 # A Toyota Prius costs 24000 dollars
 
 """
 Output:
+A Kia Soul costs 10000 dollars
+A Lamborghini Diablo costs 55000 dollars
+A Ford Fiesta costs 13000 dollars
+A Toyota Prius costs 24000 dollars
 """
 
 """

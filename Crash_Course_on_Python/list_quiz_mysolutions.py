@@ -1,4 +1,4 @@
-# List Exam:
+# List Quiz:
 
 """
 Given a list of filenames, we want to rename all the files with extension hpp to the extension h.
@@ -80,8 +80,8 @@ The guest_list function reads in a list of tuples with the name, age, and profes
 """
 def guest_list(guests):
     for element in guests:
-	name, year, occupation = element
-	print("{} is {} years old and works as {}".format(name, year, occupation))
+        name, year, occupation = element
+    print("{} is {} years old and works as {}".format(name, year, occupation))
 
 guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer")])
 

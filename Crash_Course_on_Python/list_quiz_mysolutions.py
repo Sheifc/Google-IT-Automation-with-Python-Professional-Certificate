@@ -1,8 +1,10 @@
 # List Quiz:
 
 """
-Given a list of filenames, we want to rename all the files with extension hpp to the extension h.
-To do this, we would like to generate a new list called newfilenames, consisting of the new filenames.
+Given a list of filenames, we want to rename all the files 
+with extension hpp to the extension h.
+To do this, we would like to generate a new list called newfilenames, 
+consisting of the new filenames.
 Fill in the blanks in the code using any of the methods you've learned thus far,
 like a for loop or a list comprehension.
 """
@@ -38,17 +40,21 @@ def pig_latin(text):
     # Turn the list back into a phrase
     return say
 
-print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
-print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+# Should be "ellohay owhay reaay ouyay"
+print(pig_latin("hello how are you")) 
+# Should be "rogrammingpay niay ythonpay siay unfay"
+print(pig_latin("programming in python is fun")) 
 
 """
-Which list method can be used to add a new element to a list at a specified index position?
+Which list method can be used to add a new element to a list at a 
+specified index position?
 
 list.insert(index, x)
 """
 
 """
-Tuples and lists are very similar types of sequences. What is the main thing that makes a tuple different from a list?
+Tuples and lists are very similar types of sequences. 
+What is the main thing that makes a tuple different from a list?
 
 A tuple is immutable
 """
@@ -56,7 +62,8 @@ A tuple is immutable
 """
 The group_list function accepts a group name and a list of members,
 and returns a string with the format:
-group_name: member1, member2, ... For example, group_list("g", ["a","b","c"I)returns "g: a, b, c".
+group_name: member1, member2, ... For example, 
+group_list("g", ["a","b","c"I)returns "g: a, b, c".
 Fill in the gaps in this function to do that.
 """
 
@@ -64,8 +71,10 @@ def group_list(group, users):
     members = group + ": " + ", ".join(users)
     return members
 
-print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
-print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
+# Should be "Marketing: Mike, Karen, Jake, Tasha"
+print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) 
+# Should be "Engineering: Kim, Jay, Tom"
+print(group_list("Engineering", ["Kim", "Jay", "Tom"])) 
 print(group_list("Users", "")) # Should be "Users:"
 
 """

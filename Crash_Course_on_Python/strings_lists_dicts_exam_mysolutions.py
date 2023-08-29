@@ -16,7 +16,7 @@ def confirm_length(word):
         return 0
 
 print(confirm_length("a")) # Should print 1
-print (confirm_length("This is a long string)) # Should print 21
+print (confirm_length("This is a long string")) # Should print 21
 print (confirm_length ("Monday")) # Should print 6 print
 print(confirm_length("")) # Should print 0
 
@@ -41,7 +41,7 @@ Complete the for loop and string method needed in this function so that a functi
 """
 
 def alpha_length(string):
-    character = '"
+    character = ""
     count_alpha = 0
     # Complete the for loop sequence to iterate over "string".
     for x in string:
@@ -123,11 +123,11 @@ def car_listing(car_prices):
     result = ""
     # Complete the for loop to iterate through the key and value items
     # in the dictionary.
-    for key, value in car prices.items():
-        result += "A {} costs {} dollars\n".format(key. value) # Use a string method to format the required string
-return result
+    for key, value in car_prices.items():
+        result += "A {} costs {} dollars\n".format(key, value) # Use a string method to format the required string
+    return result
 print(car_listing({"Kia Soul": 19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000,
-                   "Toyota Prius' :24000}))
+                   "Toyota Prius" :24000}))
 
 # Should print:
 # A Kia Soul costs 10000 dollars
@@ -161,7 +161,7 @@ def check_guests(guest_list, guest):
     return guest_list [guest] # Return the value for the given key
 
 guest_list = { "Adam":3, "Camila":3, "David":5, "Jamal":3, "Charley":2, "Titus":1,
-               "Raj":6, "Noemi": 1, "Sakira":3]
+               "Raj":6, "Noemi": 1, "Sakira":3}
 
 print (check_guests(guest_list, "Adam")) # Should print 3
 print (check_guests(guest_list,"Sakira")) # Should print 3
@@ -189,33 +189,33 @@ and assign the value for each key with the count of that number;
 6. return the new dictionary.
 """
 
-def count numbers(text):
+def count_numbers(text):
     # Initialize a new dictionary.
     dictionary = {}
     # Complete the for loop to iterate through each "text" character.
     for x in text:
         # Complete the if-statement using a string method to check if the
         # character is a number.
-    if x.isnumeric:
-        # Complete the if-statement using a logical operator to check if
-        # the number is not already in the dictionary.
-        if x not in dictionary:
-            # use a cictionary operation to a0d the number as a key
-            # and set the anacaad count vacue to zero.
-            dictionary [x] = 0
-        dictionary [x] += 1
-        # use a dictionary operation to increment the number count value
-        # for the existing key.
+        if x.isnumeric:
+            # Complete the if-statement using a logical operator to check if
+            # the number is not already in the dictionary.
+            if x not in dictionary:
+                # use a cictionary operation to a0d the number as a key
+                # and set the anacaad count vacue to zero.
+                dictionary [x] = 0
+            dictionary [x] += 1
+            # use a dictionary operation to increment the number count value
+            # for the existing key.
         
     return dictionary
 
-print count numbers 1001000111101"))
+print(count_numbers("1001000111101"))
 # Should be {'1': 7, '0': 6}
-print(count_numbers ("Math is fun! 2+2=4"))
+print(count_numbers("Math is fun! 2+2=4"))
 # Should be {'2': 2, '4': 1}
-print (count_numbers ("This is a sentence."))
+print(count_numbers("This is a sentence."))
 # Should be st
-print (count_numbers ("55 North Center Drive"'))
+print(count_numbers("55 North Center Drive"))
 # Should be {'5': 2}
 
 """
@@ -229,8 +229,9 @@ Output:
 """
 What do the following commands return when car_make = "Lamborghini"?
 """
-                      
-print (car_make [3:-5])
+car_make = "Lamborghini"
+                    
+print(car_make [3:-5])
 print(car_make [-4:1])
 print(car_make [:7])
 
@@ -239,7 +240,7 @@ Output: bor, hini, Lamborg
 """
 
 """
-What does the list "music_genres contain after these commands are executed?
+What does the list "music_genres" contain after these commands are executed?
 """
                       
 music_genres = ["rock", "pop", "country"]
@@ -543,6 +544,7 @@ Output:
 """
 What do the following commands return when genre="transcendental"?
 """
+genre="transcendental"
 
 print(genre[:-8])
 print(genre[-7:9])

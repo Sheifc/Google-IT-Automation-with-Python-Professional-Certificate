@@ -73,7 +73,7 @@ wardrobe.update (new_items)
 """
 What's a major advantage of using dictionaries over lists?
 """
-# Output: It's quicker and easier to find a specific element in a dictionary
+# Answer: It's quicker and easier to find a specific element in a dictionary
 
 """
 The add_prices function returns the total price of all of the groceries in the dictionary.

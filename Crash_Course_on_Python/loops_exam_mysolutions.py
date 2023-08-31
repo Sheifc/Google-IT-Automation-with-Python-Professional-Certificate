@@ -108,38 +108,6 @@ print(countdown(2)) # Should be "Counting down to 0: 2,1,0"
 print(countdown(0)) # Should be "Cannot count down to 0"
 
 """
-Fill in the blanks to complete the "odd _numbers" function. This function should 
-return a space-separated string of all odd positive numbers, up to and including the 
-"maximum" variable that's passed into the function. Complete the for loop so that a 
-function call like "odd _numbers(6)" will return the numbers "135". #Incorrect
-"""
-
-def odd_numbers(maximum):
-    
-    return_string = "" # Initializes variable as a string
-
-    # Complete the for loop with a range that includes all 
-    # odd numbers up to and including the "maximum" value.
-    if maximum <= 0:
-        return_string += "No numbers displayed"
-
-    for maximum in range(1, maximum + 1, 2): 
-        # Complete the body of the loop by appending the odd number
-        # followed by a space to the "return_string" variable.
-        return_string += str(maximum) + (" ")
-
-    # This .strip command will remove the final " " space 
-    # at the end of the "return_string".
-    return return_string.strip()
-
-
-print(odd_numbers(6))  # Should be 1 3 5
-print(odd_numbers(10)) # Should be 1 3 5 7 9
-print(odd_numbers(1))  # Should be 1
-print(odd_numbers(3))  # Should be 1 3
-print(odd_numbers(0))  # No numbers displayed
-
-"""
 The following code raises an error when executed. What's the reason for the error?
 
 def decade_counter :
@@ -276,72 +244,6 @@ def sequence(low, high):
 
 sequence(1, 3)
 # Should print the sequence 3, 2, 1 two times, as shown above.
-
-"""
-Fill in the blanks to complete the "divisible" function. This function should count 
-the number of values from O to the "max" parameter that are evenly divisible 
-(no remainder) by the "divisor" parameter. Complete the code so that a function call 
-like "divisible (100,10)" will return the number "10". # Incorrect
-"""
-
-def divisible(max, divisor):
-    count = 0 # Initialize an incremental variable
-    for x in range(1, max+1): # Complete the for loop
-        if x % divisor == 0:
-            count += 1 # Increment the appropriate variable
-    return count
-
-print(divisible(100, 10)) # Should be 10
-print(divisible(10, 3)) # Should be 4
-print(divisible(144, 17)) # Should be 9
-
-"""
-Output:
-10
-3
-8
-"""
-
-"""
-Fill in the blanks to complete the "odd _numbers" function. This function should return
-a space-separated string of all odd positive numbers, up to and including the "maximum"
-variable that's passed into the function. Complete the for loop so that a function call
-like "odd _numbers(6)" will return the numbers "135". #Incorrect
-"""
-
-def odd_numbers(maximum):
-    
-    return_string = "" # Initializes variable as a string
-
-    # Complete the for loop with a range that includes all 
-    # odd numbers up to and including the "maximum" value.
-    if maximum <= 0:
-        return_string += "No numbers displayed"
-
-    for maximum in range(1, maximum + 1, 2): 
-        # Complete the body of the loop by appending the odd number
-        # followed by a space to the "return_string" variable.
-        return_string += str(maximum) + (" ")
-
-    # This .strip command will remove the final " " space 
-    # at the end of the "return_string".
-    return return_string.strip()
-
-
-print(odd_numbers(6))  # Should be 1 3 5
-print(odd_numbers(10)) # Should be 1 3 5 7 9
-print(odd_numbers(1))  # Should be 1
-print(odd_numbers(3))  # Should be 1 3
-print(odd_numbers(0))  # No numbers displayed
-
-"""
-Output:
-1 3 5
-1 3 5 7 9
-1
-1 3
-No numbers displayed
-"""
 
 """
 What happens when the Python interpreter executes a loop where a variable used inside 

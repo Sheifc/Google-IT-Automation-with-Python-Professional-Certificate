@@ -9,7 +9,7 @@ This is a six-course certificate, developed by Google and designed to teach how 
 5. Configuration Management and the Cloud
 6. Automating Real-World tasks with Python 
 
-My solutions to the proposed exercises will be added soon.
+My solutions to the proposed exercises will be added soon. All exercises included are graded 100% correct. 
 
 ### Operations, Methods, and Functions
 #### String Methods, Operations, and Functions

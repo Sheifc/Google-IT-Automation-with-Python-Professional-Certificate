@@ -1,4 +1,4 @@
-# Assessment: Expressions, Variables, functions and Conditionals
+# Assessment 1: Expressions, Variables, functions and Conditionals: Grade 100%
 
 1. Complete the code to output the statement, "Diego's favorite food is lasagna". 
 Remember that precise syntax must be used to receive credit.
@@ -143,3 +143,100 @@ Output:
 Answers: 
 Easier to maintain
 Makes the intent of the code obvious
+
+# Assessment 1: Expressions, Variables, functions and Conditionals: Grade 100% 
+
+1. Complete the code to output the statement, "Marjery lives at her home address of 
+1234 Mockingbird Lane". Remember that precise syntax must be used to receive credit.
+
+name = "Marjery"
+home_address = "1234 Mockingbird Lane"
+print(name + " lives at her home address of " + home_address)
+# Should print "Marjery lives at her home address of 1234 Mockingbird Lane"
+
+Output:
+Marjery lives at her home address of 1234 Mockingbird Lane
+
+2. same
+
+3. What directly follows the elif keyword in an elif statement?
+
+Answer: A comparison
+
+4. same
+
+5. When using an if statement, the code inside the if block will only execute if the 
+conditional statement returns what?
+
+Answer: True
+
+6. Fill in the blanks to complete the function. The "identify_IP" function receives 
+an "P_address" as a string through the function's parameters, then it should print 
+a description of the IP address. Currently, the function should only support three 
+IP addresses and return "unknown" for all other IPs.
+
+def identify_IP(IP_address):
+    if IP_address == "192.168.1.1":
+        IP_description = "Network router"
+    elif IP_address == "8.8.8.8" or IP_address == "8.8.4.4":
+        IP_description = "Google DNS server"
+    elif IP_address == "142.250.191.46":
+        IP_description = "Google.com"
+    else:
+        IP_description = "unknown"
+    return IP_description
+
+
+print(identify_IP("8.8.4.4")) # Should print 'Google DNS server'
+print(identify_IP("142.250.191.46")) # Should print 'Google.com'
+print(identify_IP("192.168.1.1")) # Should print 'Network router'
+print(identify_IP("8.8.8.8")) # Should print 'Google DNS server'
+print(identify_IP("10.10.10.10")) # Should print 'unknown'
+print(identify_IP("")) # Should Should print 'unknown'
+
+Output: 
+Google DNS server
+Google.com
+Network router
+Google DNS server
+unknown
+unknown
+
+7. same
+
+8. What's the value of this Python expression?
+((10 >= 5*2) and (10 <= 5*2))
+
+Answer: True
+
+9. Fill in the blanks to complete the function. The "make_positive" function takes 
+in a number and converts that number to its positive equivalent. Complete the 
+function to accomplish the following tasks:
+use an if statement to test if the number is negative;
+use a calculation inside the it statement to change the negative number to be 
+positive;
+use a calculation in the else statement to return any positive "number" unchanged.
+
+def make_positive(number):
+    if number < 0:
+        result = number * -1 
+    else:
+        result = number
+    return result
+
+
+print(make_positive(-4))   # Should print 4
+print(make_positive(0))    # Should print 0
+print(make_positive(-.25)) # Should print 0.25
+print(make_positive(5))    # Should print 5
+
+Output:
+4
+0
+0.25
+5
+
+10. Code that is written so that it is readable and doesn't concea its intent is 
+called what?
+
+Answer: Self-documenting code

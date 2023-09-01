@@ -1,0 +1,145 @@
+# Assessment: Expressions, Variables, functions and Conditionals
+
+1. Complete the code to output the statement, "Diego's favorite food is lasagna". 
+Remember that precise syntax must be used to receive credit.
+
+name = "Diego"
+fav_food = "lasagna"
+print(name + "’s favorite food is " + fav_food) 
+
+Output: Diego’s favorite food is lasagna
+
+2. What's the value of this Python expression: "big" > "small"?
+
+Answer: False
+
+3. What is the elif keyword used for?
+
+Answer: To handle more than two comparison cases
+
+4. Consider the following scenario about using if-elif-else statements:
+
+Students in a class receive their grades as Pass/Fail. Scores of 60 or 
+more (out of 100) mean that the grade is "Pass". For lower scores, the grade is 
+"Fail". In addition, scores above 95 (not included) are graded as "Top Score.
+Fill in the blanks in this function so that it returns the appropriate "Pass", 
+"Fail", or "Top Score" grade.
+
+def exam_grade(score):
+    if score > 95:
+        grade = "Top Score"
+    elif score >= 60 and score <= 95:
+        grade = "Pass"
+    else:
+        grade = "Fail"
+    return grade
+
+
+print(exam_grade(65)) # Should print Pass
+print(exam_grade(55)) # Should print Fail
+print(exam_grade(60)) # Should print Pass
+print(exam_grade(95)) # Should print Pass
+print(exam_grade(100)) # Should print Top Score
+print(exam_grade(0)) # Should print Fail
+
+Output: 
+Pass
+Fail
+Pass
+Pass
+Top Score
+Fail
+
+5. What's the value of the comparison in this if statement? Hint: The answer is 
+not what the code will print.
+
+n = 4
+if n*6 > n**2 or n%2 == 0:
+    print("Check")
+
+Answer: True
+
+6. Fill in the blanks to complete the function. The "complementary_color" function 
+receives a primary color name in all lower case, then prints its complementary color.
+Currently, the function only supports the primary colors of red, yellow, and blue. 
+It returns "unknown" for all other colors or if the word has any uppercase characters.
+
+def complementary_color(color):
+    if color == "blue":
+        complement = "orange"
+    elif color == "yellow":
+        complement = "purple"
+    elif color == "red":
+        complement = "green"
+    else:
+        complement = "unknown"
+    return complement
+
+print(complementary_color("blue")) # Should print orange
+print(complementary_color("yellow")) # Should print purple
+print(complementary_color("red")) # Should print green
+print(complementary_color("black")) # Should print unknown
+print(complementary_color("Blue")) # Should print unknown
+print(complementary_color("")) # Should print unknown
+
+Output: 
+orange
+purple
+green
+unknown
+unknown
+unknown
+
+7. Can you calculate the output of this code?
+
+def difference(x, y):
+    z = x - y
+    return z
+
+print(difference(5, 3))
+
+Answer: 2
+
+8. What's the value of this Python expression?
+
+× = 5*2
+((10 != ×) or (10 > x))
+
+Answer: False
+
+9. Fill in the blanks to complete the function. The fractional_part function 
+divides the numerator by the denominator, and returns just the fractional part 
+(a number between 0 and 1). Complete the body of the function so that it returns 
+the right number. Note: Since division by 0 produces an error, if the denominator 
+is 0, the function should return 0 instead of attempting the division.
+
+def fractional_part(numerator, denominator):
+    # Operate with numerator and denominator to
+    # keep just the fractional part of the quotient 
+    if denominator == 0 or numerator == 0 or numerator/denominator == 0 :
+        part = 0
+    else:
+        part = (numerator % denominator)/ denominator
+    return part
+
+
+print(fractional_part(5, 5)) # Should print 0
+print(fractional_part(5, 4)) # Should print 0.25
+print(fractional_part(5, 3)) # Should print 0.66...
+print(fractional_part(5, 2)) # Should print 0.5
+print(fractional_part(5, 0)) # Should print 0
+print(fractional_part(0, 5)) # Should print 0
+
+Output: 
+0.0
+0.25
+0.6666666666666666
+0.5
+0
+0
+
+10. What are some of the benefits of good code style? Select all that apply.
+
+Answers: 
+Easier to maintain
+Makes the intent of the code obvious
